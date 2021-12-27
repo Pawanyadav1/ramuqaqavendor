@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".ShowAddress">
+    tools:context=".MyOrderActivity">
 
     <ImageView
         android:layout_width="100dp"
@@ -14,10 +14,11 @@
         android:layout_marginRight="10dp"
         android:layout_alignParentRight="true"
         android:alpha="0.50"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/rl_main">
+        android:layout_height="50dp"
+        android:id="@+id/rl_main1">
 
         <ImageView
             android:layout_width="50dp"
@@ -56,6 +57,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_toLeftOf="@+id/rating_avg"
                 android:textSize="14sp" />
+
             <RatingBar
                 style="@style/Widget.AppCompat.RatingBar.Small"
                 android:id="@+id/rating_avg"
@@ -70,15 +72,40 @@
                 android:saveEnabled="true"
                 android:theme="@style/RatingBar" />
 
-
-
-
         </LinearLayout>
 
 
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_main"
+        android:background="@color/purple_500">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/menu"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/noti"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:tint="@color/white"/>
+
 
     </RelativeLayout>
+
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -86,7 +113,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/rl_main"
         android:id="@+id/rl_rec"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_above="@+id/ll_bottom">
 
     <ScrollView
@@ -95,14 +122,198 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:id="@+id/view1"
+                android:layout_below="@+id/llorder"
                 android:background="@color/gray"/>
+
+
+            <RelativeLayout
+                android:id="@+id/ll_yourorder"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Your Order"
+                    android:textStyle="bold"
+                    android:id="@+id/txt_yourorder"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Category"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="55dp"
+                    android:id="@+id/txt_category"
+                    android:layout_marginLeft="20dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/filterline"
+                   android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="10dp"/>
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_yourorder"
+                android:id="@+id/llorder">
+
+   <ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+       android:src="@drawable/tamato"
+       android:layout_marginTop="10dp"
+       android:layout_marginStart="15dp"
+       android:id="@+id/imgfood"/>
+
+
+                <TextView
+                    android:id="@+id/text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgfood"
+                    android:text="22-01-2021 6:52pm"
+                    android:textSize="10dp"
+                    android:textColor="@color/tangaroa"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/text_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgfood"
+                    android:text="Tamato"
+                    android:textColor="@color/tangaroa"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/text_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgfood"
+                    android:layout_below="@+id/text_food"
+                    android:text="Price"
+                    android:textColor="@color/tangaroa"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <ImageView
+                    android:id="@+id/rupee"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/currency_rupee"
+                    android:layout_toRightOf="@+id/text_price"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/text_food"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="40dp"/>
+
+
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:hint="Put Price"
+                    android:layout_toRightOf="@+id/rupee"
+                    android:layout_below="@+id/text_food"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:maxLength="6"
+                    android:gravity="center"
+                    android:background="@drawable/shapecircle"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_below="@+id/price"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/text_date">
+
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape1"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/txt_reject"
+                        android:text="Reject Order"/>
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shapeorder"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/txt_acceptorder"
+                        android:text="Accept order"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
 
 
             <CheckBox
@@ -124,7 +335,6 @@
                 android:layout_below="@+id/view1"
                 android:id="@+id/txt_dis"
                 android:layout_marginLeft="10dp" />
-
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -174,6 +384,8 @@
 
 
             </LinearLayout>
+
+
 
             <TextView
                 android:layout_width="wrap_content"

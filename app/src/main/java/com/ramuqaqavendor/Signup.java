@@ -479,7 +479,6 @@ String StrFinalStatus="";
     }
 
 
-/*
     public void Update(String name, String email, String mobile, String strFinalStatus,String dob) {
         ll_loading.setVisibility(View.VISIBLE);
         AndroidNetworking.upload(API.add_driver)
@@ -525,7 +524,6 @@ String StrFinalStatus="";
             }
         });
     }
-*/
 
 
 

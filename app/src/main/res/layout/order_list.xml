@@ -90,13 +90,7 @@
                 android:id="@+id/txt_price"
                 android:gravity="start"/>
 
-
-
-
         </LinearLayout>
-
-
-
 
     </RelativeLayout>
 

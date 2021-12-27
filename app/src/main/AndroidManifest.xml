@@ -25,7 +25,8 @@
         android:theme="@style/Theme.ramuqaqavendor"
         tools:ignore="HardcodedDebugMode"
         tools:replace="android:allowBackup">
-        <activity android:name=".AddMoreDetails"></activity>
+        <activity android:name=".Select_City"></activity>
+        <activity android:name=".AddMoreDetails" />
         <activity android:name=".EarningActivity" />
         <activity android:name=".RatingActivity" />
         <activity android:name=".WalletActivity" />
@@ -73,8 +74,6 @@
         <service
             android:name=".FCM.FirebaseMessageRecieverService"
             android:exported="false">
-
-
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />

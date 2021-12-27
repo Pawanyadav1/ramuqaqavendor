@@ -45,14 +45,22 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 import es.dmoral.toasty.Toasty;
 
 public class MyOrderActivity extends AppCompatActivity {
+    //global declaration
+    private TextView timeUpdate;
+    Calendar calendar;
+
+
     ImageView iv_back;
     RecyclerView rv_address;
-    TextView txt_notes,txt_subtotal,txt_deliv,txt_total,txt_name,txt_email,txt_num,txt_address,txt_pickadd,txt_picked,txt_store_name,txt_confirm,txt_done,txt_dis,txt_earn,txt_rcv,star_rating,txt_riderdeliv, txt_reverttotal;
+    TextView text_date,txt_notes,txt_subtotal,txt_deliv,txt_total,txt_name,txt_email,txt_num,txt_address,txt_pickadd,txt_picked,txt_store_name,txt_confirm,txt_done,txt_dis,txt_earn,txt_rcv,star_rating,txt_riderdeliv, txt_reverttotal;
     LinearLayout ll_loading,ll_pickupadd,ll_user_summary;
     String USERID="",ORDERID="",StrProId="",shopLat="",shopLng="",userLat="",userLng="",addressLat="",addressLng="";
     ArrayList<OrderModel>orderIdModels;
@@ -77,7 +85,8 @@ public class MyOrderActivity extends AppCompatActivity {
         txt_subtotal=findViewById(R.id.txt_subtotal);
         txt_deliv=findViewById(R.id.txt_deliv);
         txt_total=findViewById(R.id.txt_total);
-        iv_back=findViewById(R.id.iv_back);
+        text_date=findViewById(R.id.text_date);
+       // iv_back=findViewById(R.id.iv_back);
         rv_address=findViewById(R.id.rv_address);
         txt_notes=findViewById(R.id.txt_notes);
         notes_rl=findViewById(R.id.notes_rl);
@@ -110,15 +119,34 @@ public class MyOrderActivity extends AppCompatActivity {
         RelativeLayout layoutBottomSheet =findViewById(R.id.bottomsheet);
         sheetBehavior = BottomSheetBehavior.from(layoutBottomSheet);
 
-        iv_back.setOnClickListener(new View.OnClickListener() {
+       /* iv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+        */
         showOrder();
 
-    }
+
+
+        //in onStart()
+        calendar = Calendar.getInstance();
+//date format is:  "Date-Month-Year Hour:Minutes am/pm"
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy HH:mm a"); //Date and time
+        String currentDate = sdf.format(calendar.getTime());
+
+//Day of Name in full form like,"Saturday", or if you need the first three characters you have to put "EEE" in the date format and your result will be "Sat".
+        SimpleDateFormat sdf_ = new SimpleDateFormat("EEEE");
+        Date date = new Date();
+        String dayName = sdf_.format(date);
+        text_date.setText(" " + currentDate + "");
+
+
+
+
+
+}
 
 
     @Override
