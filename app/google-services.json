@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "533280977713",
+    "project_id": "ramuqaqa-3a002",
+    "storage_bucket": "ramuqaqa-3a002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533280977713:android:390264dbe169067884f610",
+        "android_client_info": {
+          "package_name": "com.ramuqaqavendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533280977713-iu1b94mvtuh9d0fqvsij8gs7rmd8kab3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ramuqaqavendor",
+            "certificate_hash": "9ce093720e16edfddf9ccaf32736cf3b2fd5adb4"
+          }
+        },
+        {
+          "client_id": "533280977713-t7s77bvejh6t8867efl2f8bd2hjt7eaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwvFXLenYOMIxC2oP4zSJrXbdpoRLySzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533280977713-t7s77bvejh6t8867efl2f8bd2hjt7eaj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "533280977713-jhc6b342sgp21ritj4v64bj4hgeetc82.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RamuQaQa.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

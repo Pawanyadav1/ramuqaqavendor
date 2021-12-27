@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_main">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="start"
+                android:src="@drawable/dot"
+                android:id="@+id/rd_order"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/rd_order">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="ORDER ID"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/ll_top"
+                    android:id="@+id/txt_orderid"
+                    android:gravity="start"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/ll_top"
+                    android:id="@+id/txt_cost"
+                    android:gravity="start"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/txt_cost"
+                    android:id="@+id/txt_status"
+                    android:gravity="start"/>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txt_date"
+                android:gravity="start"/>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/gradient"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/rl_main"
+        android:id="@+id/txt_view"
+        android:text="View"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/txt_view"/>
+
+
+
+
+
+
+</RelativeLayout>

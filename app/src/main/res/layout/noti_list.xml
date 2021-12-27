@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/skyblue_rounded">
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textSize="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/tittle"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/gray" />
+
+
+            <TextView
+                android:id="@+id/timedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ll_bottom"
+                android:visibility="gone"
+                android:layout_below="@+id/timedate"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/gradient"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/rl_main"
+                    android:id="@+id/txt_confirm"
+                    android:text="Accept Order"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/gradient"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/rl_main"
+                    android:id="@+id/txt_reject"
+                    android:text="Reject Order"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gradient"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_above="@+id/ll_bottom"
+                android:id="@+id/txt_view"
+                android:text="View"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ramuqaqavendor">
+
+    <uses-sdk android:minSdkVersion="5" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".FCM.App"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@drawable/alllogo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/alllogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ramuqaqavendor"
+        tools:ignore="HardcodedDebugMode"
+        tools:replace="android:allowBackup">
+        <activity android:name=".AddMoreDetails"></activity>
+        <activity android:name=".EarningActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".WalletActivity" />
+        <activity android:name=".ViewOrderActivity" />
+        <activity android:name=".ShowRouteActivity" />
+        <activity android:name=".SucessFullActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".MyOrderActivity" />
+        <activity android:name=".ShowOrderID" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".TermsActivity" />
+        <activity android:name=".ContactUsActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ramuqaqavendor.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Signup" />
+        <activity android:name=".SelectTypeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".VerifyActivity" />
+        <activity android:name=".HomeActivity" />
+
+        <service
+            android:name=".other.GPSTracker"
+            tools:ignore="Instantiatable" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJuMnRukkohrMxeK_zcN8pbdzUuCHa-PE" />
+
+        <service
+            android:name=".FCM.FirebaseMessageRecieverService"
+            android:exported="false">
+
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

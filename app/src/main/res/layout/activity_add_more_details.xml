@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMoreDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_700">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivBack"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/ivBack"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="upload License(optional)"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/shapes">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uplode"
+                android:id="@+id/iv_License"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="upload AdharCard Front And Back"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Front"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/shapes">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uplode"
+                android:id="@+id/iv_front"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Back"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/shapes">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uplode"
+                android:id="@+id/iv_back"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Enter PanCard Number "
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+         />
+
+        <EditText
+            android:id="@+id/et_pancard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HDISD874G4"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="upload GST(optional)"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/shapes">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uplode"
+                android:id="@+id/iv_gst"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Shop Pic"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Front"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/shapes">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uplode"
+                android:id="@+id/iv_front1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Back"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/shapes">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uplode"
+                android:id="@+id/iv_back1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Shop Location"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id="@+id/pancard"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="34 kesher vuhar, jaipur"
+                android:singleLine="true"
+                android:textSize="19dp"
+                android:textColor="@color/tangaroa"
+                android:textColorHint="@color/tangaroa"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                />
+
+
+           <LinearLayout
+               android:layout_width="200dp"
+               android:layout_height="50dp"
+               android:layout_weight="1"
+               android:gravity="end|center_vertical"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Change"
+                   android:textSize="18dp"
+                   android:layout_marginEnd="10dp"
+                   android:gravity="center"/>
+               
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginEnd="5dp"
+                   android:src="@drawable/edit"
+                   />
+
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Category"
+            android:singleLine="true"
+            android:textSize="19dp"
+            android:layout_margin="10dp"
+          />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="20dp"
+                android:gravity="center_vertical"
+                android:text="Select"/>
+
+            <Spinner
+                android:id="@+id/spin_category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="end"
+                android:paddingStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Information"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Account Number"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editacnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Account Number"
+            android:inputType="number"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editifsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter IFSC Code"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editbranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Branch"
+            android:textColorHint="@color/tangaroa"
+            android:textColor="@color/tangaroa"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fullgradient"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/white_rounded"
+        android:elevation="15dp"
+        android:visibility="gone"
+        android:id="@+id/ll_loading"
+        android:layout_centerInParent="true">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/animation_view"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
